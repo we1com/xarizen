@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XARIZMA</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gr" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f0502d"/><stop offset="1" stop-color="#ffd21f"/></linearGradient></defs></svg>
+
+<header class="hdr sticky top-0 z-40">
+ <div class="max-w-[1920px] mx-auto px-5 lg:px-[2.3vw] h-20 flex items-center justify-between gap-4">
+  <a href="#top" aria-label="XARIZMA"><img src="img/logo.png" alt="XARIZMA" class="h-7 sm:h-8 w-auto"></a>
+  <div class="hidden lg:flex items-center gap-10 text-sm">
+   <a href="tel:+380979709090" class="flex items-center gap-3"><span class="arr !w-11 !h-11 !bg-[#25262b]"><img src="img/icons/phone.png" alt="" class="w-5 h-5"></span>+38 (097) 970-90-90</a>
+   <span class="flex items-center gap-3 text-[#FF9900]"><span class="arr !bg-[#25262b]"><img src="img/icons/pin.png" alt="" class="w-5 h-5"></span><span data-i="metro"></span></span>
+  </div>
+  <div class="flex items-center gap-3">
+   <div class="lang hidden lg:flex"><button data-l="ru">RU</button><button data-l="en">EN</button><button data-l="kk">KZ</button></div>
+   <a href="#halls" class="btn btn-o hidden lg:inline-block !py-3 !px-6" data-i="halls"></a>
+   <a href="#booking" class="btn btn-w hidden lg:inline-block !py-3 !px-6" data-i="book"></a>
+   <a href="#footer" class="arr !bg-[#25262b] lg:hidden" aria-label="Map"><img src="img/icons/pin.png" alt="" class="w-5 h-5"></a>
+   <button id="burger" class="lg:hidden w-10 h-10 grid place-items-center" aria-label="Menu"><svg width="28" height="20" viewBox="0 0 28 20" fill="none" stroke="#FF9900" stroke-width="3" stroke-linecap="round"><path d="M2 2h24M2 10h24M2 18h24"/></svg></button>
+  </div>
+ </div>
+</header>
+<div id="menubg" class="hidden fixed inset-0 z-[55] bg-black/60 lg:hidden"></div>
+<div id="menu" class="hidden fixed top-0 inset-x-0 z-[60] bg-[#25262b] px-5 pb-8 lg:hidden">
+ <div class="h-20 flex items-center justify-between"><img src="img/logo.png" alt="XARIZMA" class="h-7 w-auto"><button id="menux" class="w-10 h-10 grid place-items-center" aria-label="Close"><svg width="22" height="22" viewBox="0 0 22 22" stroke="#FF9900" stroke-width="3" stroke-linecap="round"><path d="M3 3l16 16M19 3L3 19"/></svg></button></div>
+ <div class="space-y-4 mt-2">
+  <div class="flex items-center gap-4"><span class="arr !bg-[#34353b]"><img src="img/icons/pin.png" alt="" class="w-5 h-5"></span><span class="text-xs text-[#FF9900]" data-i="metro"></span></div>
+  <a href="tel:+380979709090" class="flex items-center gap-4 text-xs"><span class="arr !bg-[#34353b]"><img src="img/icons/phone.png" alt="" class="w-5 h-5"></span>+38 (097) 970-90-90</a>
+ </div>
+ <div class="lang flex mt-5"><button data-l="ru">RU</button><button data-l="en">EN</button><button data-l="kk">KZ</button></div>
+ <a href="#halls" class="btn btn-o block text-center mt-6" data-i="halls"></a>
+ <a href="#booking" class="btn btn-w block text-center mt-3" data-i="book"></a>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden -mt-20" style="background:linear-gradient(90deg,#121214 30%,rgba(18,18,20,.62) 65%,rgba(18,18,20,.88)),url(img/hall1.jpg) 70% center/cover">
+ <div id="herobox" class="relative">
+  <div id="htext" class="relative z-10 px-5 pt-28 pb-10 lg:px-0 lg:pb-0">
+   <p class="hk text-base md:text-3xl tracking-wide uppercase text-white/90 mb-5" data-i="kicker"></p>
+   <h1 class="text-[1.65rem] sm:text-4xl md:text-6xl" data-h="h1"></h1>
+   <span class="inline-block mt-4 text-[11px] bg-white/10 rounded-full px-3 py-1 text-white/80" data-i="metro"></span>
+   <ul class="mt-6 lg:mt-8 flex flex-col lg:flex-row lg:flex-wrap gap-4 lg:gap-6 text-xs lg:text-sm text-white/80">
+    <li class="flex items-center gap-3 max-w-[170px]"><span class="arr !bg-[#2a2b31] text-[#FF9900] flex-none">✓</span><span data-i="ok1"></span></li>
+    <li class="flex items-center gap-3 max-w-[170px]"><span class="arr !bg-[#2a2b31] text-[#FF9900] flex-none">✓</span><span data-i="ok2"></span></li>
+    <li class="flex items-center gap-3 max-w-[170px]"><span class="arr !bg-[#2a2b31] text-[#FF9900] flex-none">✓</span><span data-i="ok3"></span></li>
+   </ul>
+   <a href="#booking" class="btn mt-28 lg:mt-9 w-full lg:w-auto text-center" data-i="cta"></a>
+  </div>
+  <!-- Сцена 1920×871 (координаты из Figma), масштабируется скриптом fit() -->
+  <div id="stagewrap" class="absolute inset-0 overflow-hidden pointer-events-none">
+   <div id="stage" class="absolute top-0 left-0" style="width:1920px;height:871px;transform-origin:0 0">
+    <img src="img/girl.png" alt="" style="position:absolute;left:946px;top:26px;width:700px;height:1247px">
+    <img src="img/badge.png" alt="24/7" style="position:absolute;left:873px;top:503px;width:373px;height:373px">
+    <img src="img/mic_stand.png" alt="" style="position:absolute;left:1285px;top:465px;width:180px;height:624px;filter:drop-shadow(13px 10px 4px rgba(0,0,0,.29))">
+   </div>
+  </div>
+ </div>
+ <div class="grid grid-cols-2 lg:grid-cols-4 relative">
+  <div class="bg-[#25262b] p-5 lg:p-6 flex items-center gap-4 text-xs lg:text-sm"><img src="img/icons/micro.png" alt="" class="w-10 h-10"><span data-i="f1"></span></div>
+  <div class="bg-[#1d1e22] p-5 lg:p-6 flex items-center gap-4 text-xs lg:text-sm"><img src="img/icons/bottle.png" alt="" class="w-10 h-10"><span data-i="f2"></span></div>
+  <div class="order-4 lg:order-3 bg-[#1d1e22] p-5 lg:p-6 flex items-center gap-4 text-xs lg:text-sm"><img src="img/icons/cash.png" alt="" class="w-10 h-10"><span data-i="f3"></span></div>
+  <div class="order-3 lg:order-4 bg-[#1d1e22] p-5 lg:p-6 flex items-center gap-4 text-xs lg:text-sm"><img src="img/icons/confetti.png" alt="" class="w-10 h-10"><span data-i="f4"></span></div>
+ </div>
+</section>
+
+<!-- HALLS -->
+<section id="halls" class="bg-[#1a1a1e]">
+ <div class="max-w-7xl mx-auto grid lg:grid-cols-[320px_1fr] lg:grid-rows-[auto_1fr]">
+  <div class="px-5 pt-14 lg:p-10 lg:pb-0">
+   <h2 class="text-3xl lg:text-5xl" data-i="halls"></h2>
+   <p class="mt-6 lg:mt-8 uppercase text-white/85 leading-7 lg:leading-8 text-sm lg:text-base" data-i="halls_sub"></p>
+   <div id="tabs" class="mt-8 lg:mt-10 flex flex-wrap gap-x-5 gap-y-1" role="tablist"></div>
+  </div>
+  <div class="lg:col-start-2 lg:row-start-1 lg:row-span-2 mt-6 lg:mt-0">
+   <div id="main" class="relative h-[220px] sm:h-[320px] md:h-[470px] overflow-hidden transition-[background] duration-500"></div>
+   <div id="thumbs" class="grid grid-cols-5"></div>
+  </div>
+  <div class="px-5 pt-6 pb-14 lg:px-10 lg:pt-0 lg:pb-10 flex flex-col">
+   <ul class="space-y-2 text-xs lg:text-sm text-white/85 lg:mt-6">
+    <li class="bg-gradient-to-r from-[#ff9900]/15 to-transparent px-3 py-2" id="hn"></li><li class="bg-gradient-to-r from-[#ff9900]/15 to-transparent px-3 py-2" id="ha"></li><li class="bg-gradient-to-r from-[#ff9900]/15 to-transparent px-3 py-2" id="hc"></li>
+   </ul>
+   <div class="mt-8 lg:mt-10 flex items-center gap-4">
+    <button class="arr" id="hp" data-a="prev">‹</button><span class="text-sm"><b id="hi">1</b> <span class="text-white/50 text-xs"><span data-i="of"></span> 5</span></span><button class="arr" id="hnx" data-a="next">›</button>
+   </div>
+   <a href="#booking" class="btn mt-8 lg:mt-10 self-start" data-i="book"></a>
+  </div>
+ </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="max-w-7xl mx-auto px-5 py-14 lg:py-20">
+ <div class="grid lg:grid-cols-[1fr_300px] gap-10">
+  <div>
+   <h2 class="text-3xl lg:text-5xl" data-i="adv_t"></h2>
+   <p class="mt-6 uppercase text-white/85 text-sm lg:text-base" data-i="adv_sub"></p>
+   <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 mt-8 lg:mt-10 items-start lg:items-stretch" id="adv"></div>
+  </div>
+  <div class="relative flex flex-col items-center justify-end lg:gap-8">
+   <img src="img/mic.jpg" alt="" class="h-56 lg:h-[430px] w-auto" style="-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%)">
+   <a href="#booking" class="btn relative z-10 -mt-14 lg:mt-0 w-full lg:w-auto text-center" data-i="book_room"></a>
+  </div>
+ </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="bg-[#161619] py-14 lg:py-20">
+ <div class="max-w-7xl mx-auto px-5 relative">
+  <div><h2 class="text-3xl lg:text-5xl" data-i="how_t"></h2><p class="mt-6 uppercase text-white/85 text-sm lg:text-base" data-i="how_sub"></p></div>
+  <div class="mt-10 lg:mt-12 overflow-hidden -mx-5 px-5"><div id="track" class="flex transition-transform duration-500"></div></div>
+  <div class="mt-6 lg:mt-8 flex items-center gap-4"><span class="text-[#FF9900] text-3xl" id="sic"></span><p class="font-semibold text-sm lg:text-base" id="stx"></p></div>
+  <div class="mt-6 lg:mt-0 flex items-center gap-4 lg:absolute lg:right-5 lg:top-24"><button class="arr" id="sp" data-a="prev">‹</button><span class="text-sm"><b class="text-xl" id="si">1</b> <span class="text-white/50 text-xs"><span data-i="of"></span> 9</span></span><button class="arr" id="sn" data-a="next">›</button></div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="max-w-7xl mx-auto px-5 py-14 lg:py-20">
+ <h2 class="text-3xl lg:text-5xl" data-i="faq_t"></h2>
+ <p class="mt-6 uppercase text-white/85 text-sm lg:text-base" data-i="faq_sub"></p>
+ <div class="grid lg:grid-cols-[1.4fr_1fr] gap-12 mt-10">
+  <div id="faq" class="space-y-4"></div>
+  <div class="text-left">
+   <p class="d !text-xl !normal-case !leading-snug !font-extrabold" data-h="slip"></p>
+   <img src="img/slippers.png" alt="" class="w-72 lg:w-64 my-6 lg:my-8" style="filter:drop-shadow(0 18px 18px rgba(0,0,0,.6))">
+   <a href="#booking" class="btn block lg:inline-block text-center" data-i="book_room"></a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer id="footer" class="bg-[#0f0f11] py-10">
+ <div class="max-w-7xl mx-auto px-5 flex flex-col items-start lg:flex-row lg:flex-wrap lg:items-center lg:justify-between gap-5 lg:gap-6 text-xs text-white/80">
+  <a href="#top" aria-label="XARIZMA"><img src="img/logo.png" alt="XARIZMA" class="h-7 w-auto"></a>
+  <a href="tel:+380979709090" class="flex items-center gap-3"><span class="arr !w-10 !h-10"><img src="img/icons/phone.png" alt="" class="w-5 h-5"></span>+38 (097) 970-90-90</a>
+  <span class="flex items-center gap-3"><span class="arr !w-10 !h-10">◷</span><span data-i="hours"></span></span>
+  <span class="flex items-center gap-3"><span class="arr !w-10 !h-10 flex-none"><img src="img/icons/pin.png" alt="" class="w-5 h-5"></span><span data-i="addr"></span></span>
+  <a href="https://yandex.ru/maps/?text=Сретенский переулок, 4" target="_blank" rel="noopener" class="btn btn-o !py-3 !px-6 !text-[11px] !border-[#FF9900]" data-i="route"></a>
+  <div class="lg:hidden w-full space-y-3">
+   <a href="#halls" class="btn btn-o block text-center" data-i="halls"></a>
+   <a href="#booking" class="btn btn-w block text-center" data-i="book"></a>
+  </div>
+ </div>
+</footer>
+
+<a href="https://t.me/fh_harizma_bot" target="_blank" rel="noopener" data-a="tg" class="fixed right-4 bottom-20 z-50 w-14 h-14 rounded-full grid place-items-center hover:scale-110 transition" style="background:var(--g);box-shadow:0 8px 24px -6px #ff9900aa"><img src="img/icons/telegram.png" alt="" class="w-6 h-6"></a>
+<button id="up" data-a="up" class="fixed right-4 bottom-4 z-50 w-12 h-12 rounded-full bg-[#2a2b31] grid place-items-center text-xl font-extrabold">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
